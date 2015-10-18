@@ -37,8 +37,13 @@ def hello(name)
   "Hello, #{name}"
 end
 
+
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  
+  x = s.downcase.split("")
+  x[0] == "a" || "e" || "i" || "u" || "o" ? sum = false : sum = true
+  return sum
+
 end
 
 def binary_multiple_of_4? s
